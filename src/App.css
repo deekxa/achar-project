@@ -1,0 +1,24 @@
+/* Navbar */
+.navbar {
+  z-index: 50;
+}
+
+/* Mobile Menu */
+.hamburger-menu {
+  display: none;
+}
+
+/* Show hamburger menu on small screens */
+@media (max-width: 767px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar .menu.active {
+    display: block;
+  }
+}

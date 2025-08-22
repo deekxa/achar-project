@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  /* Light theme variables */
+  --bg-primary: #ffffff;
+  --text-primary: #333333;
+  --nav-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --border-color: #e1e1e1;
+}
+
+/* Dark theme variables */
+.dark {
+  --bg-primary: #1a1a1a;
+  --text-primary: #ffffff;
+  --nav-bg: #2d2d2d;
+  --card-bg: #2d2d2d;
+  --border-color: #404040;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Add some basic transitions for smooth theme switching */
+* {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Additional dark mode styles */
+.dark .card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.dark .navbar {
+  background-color: var(--nav-bg);
+}
+
+/* Container background colors */
+.min-h-screen {
+  background-color: var(--bg-primary);
+}
